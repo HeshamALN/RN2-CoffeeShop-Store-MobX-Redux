@@ -14,6 +14,7 @@ import {
   Content,
   Header
 } from "native-base";
+import CoffeeList from "../CoffeeList";
 
 class Login extends Component {
   render() {
@@ -53,10 +54,18 @@ class Login extends Component {
               </Form>
             </Body>
           </ListItem>
-          <Button full success>
+          <Button
+            full
+            success
+            onPress={() => this.props.navigation.navigate("CoffeeListScreen")}
+          >
             <Text>Login</Text>
           </Button>
-          <Button full warning>
+          <Button
+            full
+            warning
+            onPress={() => this.props.navigation.navigate("CoffeeListScreen")}
+          >
             <Text>Register</Text>
           </Button>
         </List>
