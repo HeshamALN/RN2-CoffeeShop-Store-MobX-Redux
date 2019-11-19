@@ -16,7 +16,16 @@ const StackNav = createStackNavigator(
     CoffeeCartScreen: CoffeeCart
   },
   {
-    initialRouteName: "LoginScreen"
+    initialRouteName: "LoginScreen",
+    defaultNavigationOptions: {
+      headerTintColor: "blue",
+      headerStyle: {
+        backgroundColor: "rgb(20,90,100)"
+      },
+      headerTitleStyle: {
+        fontWeight: "bold"
+      }
+    }
   }
 );
 

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {navigation} from "react-native-re";
 
 // NativeBase Components
 import {
@@ -75,6 +76,15 @@ class Login extends Component {
       </Content>
     );
   }
-}
+  
+  
+  
+  Login.navigationOptions = {
+    
+      title: "letitle"
+    };
+  };
+  
+
 
 export default Login;
